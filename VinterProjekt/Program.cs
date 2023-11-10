@@ -15,6 +15,7 @@ while (tama.GetAlive() == true)
     Console.WriteLine("3. Lära den ett nytt ord");
     Console.WriteLine("4. Ingenting");
     input = Console.ReadLine();
+
     if (input == "3")
     {
         Console.WriteLine($"Vad vill lära din {tama.name} för ord?");
