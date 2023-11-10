@@ -1,0 +1,14 @@
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\bin\Debug\net7.0\VinterProjekt.exe
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\bin\Debug\net7.0\VinterProjekt.deps.json
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\bin\Debug\net7.0\VinterProjekt.runtimeconfig.json
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\bin\Debug\net7.0\VinterProjekt.dll
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\bin\Debug\net7.0\VinterProjekt.pdb
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.AssemblyInfoInputs.cache
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.AssemblyInfo.cs
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.csproj.CoreCompileInputs.cache
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.dll
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\refint\VinterProjekt.dll
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.pdb
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\VinterProjekt.genruntimeconfig.cache
+c:\Users\ahgren.nicole\Documents\skola2\VinterProjekt\VinterProjekt\obj\Debug\net7.0\ref\VinterProjekt.dll
