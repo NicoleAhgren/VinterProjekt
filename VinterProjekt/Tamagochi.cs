@@ -2,6 +2,12 @@
 {
     int hunger = 0;
     int boredom = 0;
+
+    int money = 0;
+
+    int fruit = 0;
+
+    // string Tårta;
     List<string> words = new() {"cheeeese"};
     bool isAlive = true;
 
@@ -11,13 +17,14 @@
 
     public void PrintStats()
     {
-        Console.WriteLine($"Name: {name} || Hunger: {hunger} || Boredom: {boredom} || Vocabulary: {words.Count} words");
+        Console.WriteLine($"Name: {name} || Hunger: {hunger} || Boredom: {boredom} || Vocabulary: {words.Count} words || Money: {money}Kr || Food: {fruit}");
     }
 
     public void Feed()
     {
         hunger -= 10;
         Console.WriteLine($"Hunger = {hunger}" );
+        fruit -= 1;
     }
     public bool GetAlive()
         {
@@ -27,6 +34,8 @@
     private void ReduceBoredom()
     {
         boredom -= 10;
+        money += 10;
+
     }
         public void Tick()
     {
@@ -35,6 +44,14 @@
         if (boredom >= 100 || hunger >= 100)
         {
             isAlive = false;
+        }
+        if (money == 0)
+        {
+            //Du kan inte köpa mat
+        }
+        if (fruit == 0)
+        {
+            //Du inte få mata din tama
         }
     }
     public void TeachWord(string word)
@@ -49,6 +66,17 @@
         Console.WriteLine($" {name} says: {words[wordNr]}");
         ReduceBoredom();
     }
+
+    public void Fruit()
+    {
+        money -= 10;
+        fruit += 1;
+    }
+
+//     public void Cake()
+//     {
+//         money -= 20;
+//     }
 }
 
 
