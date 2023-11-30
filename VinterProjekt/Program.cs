@@ -1,7 +1,5 @@
-﻿
-using System.Data.SqlTypes;
-
-Tamagochi tama = new();
+﻿Tamagochi tama = new();
+Shop shop = new Shop();
 string input;
 
 Console.WriteLine("Välj ett namn till din tamagochi");
@@ -40,6 +38,7 @@ else if (input == "1")
     tama.Feed();
     tama.Tick();
     Console.ReadLine();
+
 }
 else if (input == "4")
 {
@@ -49,9 +48,15 @@ else if (input == "4")
 
     if (Console.ReadLine() == "A" || Console.ReadLine() == "a"|| Console.ReadLine() == "B" || Console.ReadLine() == "b")
     {
-        tama.Fruit();
+        shop.BuyFruit();
     }
+    else 
+    {
+    Console.WriteLine("Nej du kan inte skriva så.");
+    Console.ReadLine();
 }
+    }
+
 else if (input == "5")
 {
     tama.Tick();

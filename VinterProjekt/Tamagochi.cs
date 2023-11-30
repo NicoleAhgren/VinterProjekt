@@ -1,11 +1,12 @@
 ﻿public class Tamagochi
 {
+    Shop shop = new Shop();
     int hunger = 0;
     int boredom = 0;
 
-    int money = 0;
+    // int money = 0;
 
-    int fruit = 0;
+    // int fruit = 0;
 
     // string Tårta;
     List<string> words = new() {"cheeeese"};
@@ -17,14 +18,14 @@
 
     public void PrintStats()
     {
-        Console.WriteLine($"Name: {name} || Hunger: {hunger} || Boredom: {boredom} || Vocabulary: {words.Count} words || Money: {money}Kr || Food: {fruit}");
+        Console.WriteLine($"Name: {name} || Hunger: {hunger} || Boredom: {boredom} || Vocabulary: {words.Count} words || Money: {shop.money}Kr || Food: {shop.fruit}");
     }
 
     public void Feed()
     {
         hunger -= 10;
         Console.WriteLine($"Hunger = {hunger}" );
-        fruit -= 1;
+        shop.FeedFruit();
     }
     public bool GetAlive()
         {
@@ -34,7 +35,7 @@
     private void ReduceBoredom()
     {
         boredom -= 10;
-        money += 10;
+        shop.money += 10;
 
     }
         public void Tick()
@@ -45,14 +46,15 @@
         {
             isAlive = false;
         }
-        if (money == 0)
-        {
-            //Du kan inte köpa mat
-        }
-        if (fruit == 0)
-        {
-            //Du inte få mata din tama
-        }
+    //     if (money <= 0)
+    //     {
+
+    //         //Du kan inte köpa mat
+    //     }
+    //     if (fruit <= 0)
+    //     {
+    //         //Du inte få mata din tama
+    //     }
     }
     public void TeachWord(string word)
     {
@@ -67,11 +69,11 @@
         ReduceBoredom();
     }
 
-    public void Fruit()
-    {
-        money -= 10;
-        fruit += 1;
-    }
+    // public void Fruit()
+    // {
+    //     money -= 10;
+    //     fruit += 1;
+    // }
 
 //     public void Cake()
 //     {
