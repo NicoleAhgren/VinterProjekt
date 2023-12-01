@@ -16,16 +16,12 @@
     //     fruit -= 1;
     // }
     
-    public void FeedFruit()
-    {
 
-        fruit -= 1;
-    }
-        public void BuyFruit()
-    {
-        money -= 10;
-        fruit += 1;
-    }
+    //     public void BuyFruit()
+    // {
+    //     money -= 10;
+    //     fruit += 1;
+    // }
 
 
 }

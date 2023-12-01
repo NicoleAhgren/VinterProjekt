@@ -34,9 +34,8 @@ else if (input == "2")
 }
 else if (input == "1")
 {
-    Console.WriteLine($"Du gav {tama.name} en frukt");
+
     tama.Feed();
-    tama.Tick();
     Console.ReadLine();
 
 }
@@ -47,8 +46,8 @@ else if (input == "4")
     // Console.WriteLine("C. Tårta 20kr");
 
     if (Console.ReadLine() == "A" || Console.ReadLine() == "a"|| Console.ReadLine() == "B" || Console.ReadLine() == "b")
-    {
-        shop.BuyFruit();
+    { 
+        tama.BuyFruit();
     }
     else 
     {

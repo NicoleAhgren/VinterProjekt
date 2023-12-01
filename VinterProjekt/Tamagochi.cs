@@ -23,9 +23,19 @@
 
     public void Feed()
     {
+        if (shop.fruit <= 0)
+        {
+            Console.WriteLine("Du har ingen mat kvar!");
+            Console.WriteLine("Köp mer i affären");
+            Console.ReadLine();
+            Tick();
+        }
+        else if (shop.fruit >= 0)
+        {
+        Console.WriteLine($"Du gav {name} en frukt");
         hunger -= 10;
-        Console.WriteLine($"Hunger = {hunger}" );
-        shop.FeedFruit();
+        shop.fruit -= 1;
+        }
     }
     public bool GetAlive()
         {
@@ -67,6 +77,22 @@
         int wordNr = generator.Next(words.Count);
         Console.WriteLine($" {name} says: {words[wordNr]}");
         ReduceBoredom();
+    }
+    public void BuyFruit()
+    {
+        if (shop.money <= 0)
+        {
+            Tick();
+            Console.WriteLine("Du har tyvärr för lite pengar!");
+            Console.WriteLine("Skaffa mer pengar genom att leka med din tamagochi");
+            Console.ReadLine();
+        }
+        else if (shop.money >= 0)
+        {
+        shop.money -= 10;
+        shop.fruit += 1;
+        Tick();
+        }
     }
 
     // public void Fruit()
