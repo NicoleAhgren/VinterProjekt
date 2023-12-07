@@ -1,11 +1,13 @@
-﻿Tamagochi tama = new();
+﻿using System.Runtime.Intrinsics.Arm;
+
+Tamagochi tama = new();
 Shop shop = new Shop();
 string input;
 
 Console.WriteLine("Välj ett namn till din tamagochi");
 tama.name = Console.ReadLine();
 
-while (tama.GetAlive() == true)
+while (tama.GetAlive() == true) // En loop som gör så att tamagochin lever
 {
 tama.PrintStats();
 
@@ -41,20 +43,23 @@ else if (input == "1")
 }
 else if (input == "4")
 {
-    Console.WriteLine("A. Äpple 10kr");
-    Console.WriteLine("B. Banan 10kr");
+    Console.WriteLine("Skriv F för att köpa en frukt");
+    string BuyFruit = Console.ReadLine();
+    //Console.WriteLine("B. Banan 10kr");
     // Console.WriteLine("C. Tårta 20kr");
 
-    if (Console.ReadLine() == "A" || Console.ReadLine() == "a"|| Console.ReadLine() == "B" || Console.ReadLine() == "b")
-    { 
-        tama.BuyFruit();
+    if (BuyFruit.ToLower() == "f") // så man kan skriva både stort och litet F
+    {  
+ 
+        tama.BuyFruit(); // Den lägger till en frukt och minskar pengarna med 10kr
+        
     }
     else 
     {
     Console.WriteLine("Nej du kan inte skriva så.");
     Console.ReadLine();
-}
     }
+}
 
 else if (input == "5")
 {
@@ -65,7 +70,7 @@ else
     Console.WriteLine("Nej du kan inte skriva så.");
     Console.ReadLine();
 }
-Console.Clear();
+Console.Clear(); // Det man skrivit innan försvinner
 }
 
 Console.WriteLine($"{tama.name} är nu död...");

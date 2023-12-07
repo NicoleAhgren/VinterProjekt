@@ -1,8 +1,8 @@
 ﻿public class Shop
 {
-    public int fruit = 0;
+    public int fruit = 0; // En int så frukten kan öka och minska
     
-    public int money = 0;
+    public int money = 0; // En int så att pengarna kan öka och minska
 
     //     public void ReduceBoredom()
     // {
