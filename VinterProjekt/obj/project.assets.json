@@ -8,17 +8,21 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ahgren.nicole\\.nuget\\packages\\": {}
+    "C:\\Users\\ahgren.nicole\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\ahgren.nicole\\Documents\\skola2\\VinterProjekt\\VinterProjekt\\VinterProjekt.csproj",
+      "projectUniqueName": "C:\\Users\\ahgren.nicole\\Documents\\GitHub\\VinterProjekt\\VinterProjekt\\VinterProjekt.csproj",
       "projectName": "VinterProjekt",
-      "projectPath": "c:\\Users\\ahgren.nicole\\Documents\\skola2\\VinterProjekt\\VinterProjekt\\VinterProjekt.csproj",
+      "projectPath": "C:\\Users\\ahgren.nicole\\Documents\\GitHub\\VinterProjekt\\VinterProjekt\\VinterProjekt.csproj",
       "packagesPath": "C:\\Users\\ahgren.nicole\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\ahgren.nicole\\Documents\\skola2\\VinterProjekt\\VinterProjekt\\obj\\",
+      "outputPath": "C:\\Users\\ahgren.nicole\\Documents\\GitHub\\VinterProjekt\\VinterProjekt\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\ahgren.nicole\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -62,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

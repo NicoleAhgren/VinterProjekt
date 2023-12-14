@@ -1,6 +1,4 @@
-﻿using System.Runtime.Intrinsics.Arm;
-
-Tamagochi tama = new();
+﻿Tamagochi tama = new();
 Shop shop = new Shop();
 string input;
 
