@@ -7,7 +7,7 @@ tama.name = Console.ReadLine();
 
 while (tama.GetAlive() == true) // En loop som gör så att tamagochin lever
 {
-tama.PrintStats();
+tama.PrintStats(); // skriver ut hur mycket hunger och sånt den har
 
 Console.WriteLine($"Vad göra med {tama.name}");
 Console.WriteLine("1. Mata den");
